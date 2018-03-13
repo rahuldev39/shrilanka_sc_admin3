@@ -125,7 +125,7 @@
         <div class="content">
           <div class="am-logo"></div>
           <ul class="sidebar-elements">
-            <li class="parent active">
+            <li class="parent">
               <a href="./Judgments.html"><i class="icon s7-hammer"></i>
                 <span>Judgments</span></a>
             </li>
@@ -139,7 +139,7 @@
               <a href="./office-report.html"><i class="icon s7-graph"></i>
                 <span>Office Report</span></a>
             </li>
-            <li class="parent">
+            <li class="parent active">
               <a href="./case-status.html"><i class="icon s7-note2"></i>
                 <span>Case Status</span></a>
             </li>
@@ -158,10 +158,10 @@
       </div>
       <div class="am-content">
         <div class="page-head">
-          <h2>Judgments</h2>
+          <h2>Case Status</h2>
           <ol class="breadcrumb">
             <li><a href="#">Home</a></li>
-            <li class="active">Judgments</li>
+            <li class="active">Case Status</li>
           </ol>
         </div>
         <div class="main-content">
@@ -178,23 +178,20 @@
                                 <a class="nav-link" href="#tabe2" role="tab" data-toggle="tab">Diary No.</a>
                               </li>
                               <li class="nav-item" role="presentation">
-                                <a class="nav-link" href="#tabe3" role="tab" data-toggle="tab">Judgment Date</a>
+                                <a class="nav-link" href="#tabe3" role="tab" data-toggle="tab">Parties Name</a>
                               </li>
                               <li class="nav-item" role="presentation">
-                                <a class="nav-link" href="#tabe4" role="tab" data-toggle="tab">Judge Name</a>
+                                <a class="nav-link" href="#tabe4" role="tab" data-toggle="tab">AOR</a>
                               </li>
                               <li class="nav-item" role="presentation">
-                                <a class="nav-link" href="#tabe5" role="tab" data-toggle="tab">Parties</a>
+                                <a class="nav-link" href="#tabe5" role="tab" data-toggle="tab">Court / Tribunal</a>
                               </li>
-                              <li class="nav-item" role="presentation">
-                                <a class="nav-link" href="#tabe6" role="tab" data-toggle="tab">Actwise</a>
-                              </li>
+
+
                               <li class="nav-item" role="presentation">
                                 <a class="nav-link" href="#tabe7" role="tab" data-toggle="tab">Free Text</a>
                               </li>
-                              <li class="nav-item" role="presentation">
-                                <a class="nav-link" href="#tabe8" role="tab" data-toggle="tab">Const. Bench</a>
-                              </li>
+
                             </ul>
 
                             <!-- Tab panes -->
@@ -295,19 +292,49 @@
                                 <div class="tab-body">
                                   <div class="form-container">
                                      <div class="row">
+                                              <div class="col-md-3">
+                                                  <div class="form-group">
+                                                      <label>Pet./Res.</label>
+                                                      <div class="input-group">
+                                                        <select name="Jparty_type" class="form-control">
+                                                          <option value="">Any</option>
+                                                          <option value="P">Petitioner</option>
+                                                          <option value="R">Respondent</option></select>
 
-                                               <div class="col-md-8">
-                                                 <div class="form-group">
-                                                     <label>Judgments between dates</label>
-                                                     <div class="input-group">
-                                                       <input type="date" placeholder="Enter Detail" class="form-control">
-                                                       <span class="middle-text">to</span>
-                                                       <input type="date" placeholder="Enter Detail" class="form-control">
-                                                     </div>
+                                                      </div>
 
-                                                   </div>
-                                               </div>
+                                                    </div>
+                                                </div>
 
+                                                <div class="col-md-3">
+                                                    <div class="form-group">
+                                                        <label>Party's Name</label>
+                                                        <input type="text" class="form-control">
+
+                                                      </div>
+                                                  </div>
+
+                                                <div class="col-md-3">
+                                                  <div class="form-group">
+                                                      <label>Case Year</label>
+                                                      <div class="input-group">
+                                                        <input type="date" placeholder="Enter Detail" class="form-control">
+
+                                                      </div>
+                                                    </div>
+                                                </div>
+
+
+
+                                                <div class="col-md-3">
+                                                  <div class="form-group">
+                                                      <label>Status</label>
+                                                      <select id="CTrpt" class="form-control">
+                                                          <option value="A">Pending</option>
+                                                          <option value="R">Dispose</option>
+                                                      </select>
+                                                    </div>
+                                                </div>
 
                                             </div>
                                           </div>
@@ -322,47 +349,54 @@
                                 <div class="tab-body">
                                   <div class="form-container">
                                      <div class="row">
-                                              <div class="col-md-4">
+                                              <div class="col-md-2">
                                                   <div class="form-group">
-                                                      <label>Hon'ble Judges</label>
-                                                      <select name="judgename" class="form-control">
-                                                        <option value="">Select</option>
-                                                        <option value="108">HON'BLE THE CHIEF JUSTICE</option>
-                                                        <option value="1">HON'BLE MR. JUSTICE N.M. KASLIWAL</option>
-                                                        <option value="2">HON'BLE MR. JUSTICE T.K. THOMMEN</option>
-                                                        <option value="3">HON'BLE MR. JUSTICE V. RAMASWAMI</option>
-                                                        <option value="4">HON'BLE MR. JUSTICE S. RATNAVEL PANDIAN</option>
-                                                        <option value="5">HON'BLE MR. JUSTICE K. JAYACHANDRA REDDY</option>
-                                                        <option value="6">HON'BLE MR. JUSTICE R.M. SAHAI</option>
-                                                        <option value="7">HON'BLE MR. JUSTICE P.B. SAWANT</option>
-                                                        <option value="8">HON'BLE MR. JUSTICE KULDIP SINGH</option>
-                                                        <option value="10">HON'BLE MR. JUSTICE K. RAMASWAMY</option>
-                                                        <option value="12">HON'BLE MR. JUSTICE S.C. AGRAWAL</option>
-                                                        <option value="14">HON'BLE MR. JUSTICE YOGESHWAR DAYAL</option>
-                                                        <option value="15">HON'BLE MR. JUSTICE S. MOHAN</option>
-                                                      </select>
+                                                      <label>Pet./Res.</label>
+                                                      <div class="input-group">
+                                                        <select name="Jparty_type" class="form-control">
+                                                          <option value="">Any</option>
+                                                          <option value="P">Petitioner</option>
+                                                          <option value="R">Respondent</option></select>
+
+                                                      </div>
+
                                                     </div>
                                                 </div>
-                                                <div class="col-md-5">
+
+                                                <div class="col-md-2">
+                                                    <div class="form-group">
+                                                        <label>AOR Number</label>
+                                                        <input type="text" class="form-control">
+
+                                                      </div>
+                                                  </div>
+
+                                                  <div class="col-md-3">
+                                                      <div class="form-group">
+                                                          <label>AOR Name</label>
+                                                          <input type="text" class="form-control">
+
+                                                        </div>
+                                                    </div>
+
+                                                <div class="col-md-3">
                                                   <div class="form-group">
-                                                      <label>Judgments between dates</label>
+                                                      <label>Case Year</label>
                                                       <div class="input-group">
                                                         <input type="date" placeholder="Enter Detail" class="form-control">
-                                                        <span class="middle-text">to</span>
-                                                        <input type="date" placeholder="Enter Detail" class="form-control">
+
                                                       </div>
                                                     </div>
                                                 </div>
 
 
 
-                                                <div class="col-md-3">
+                                                <div class="col-md-2">
                                                   <div class="form-group">
-                                                      <label>Reportable</label>
+                                                      <label>Status</label>
                                                       <select id="CTrpt" class="form-control">
-                                                          <option value="A">All</option>
-                                                          <option value="R">Reportable</option>
-                                                          <option value="N">Non-Reportable</option>
+                                                          <option value="A">Pending</option>
+                                                          <option value="R">Dispose</option>
                                                       </select>
                                                     </div>
                                                 </div>
@@ -382,38 +416,68 @@
                                      <div class="row">
                                               <div class="col-md-4">
                                                   <div class="form-group">
-                                                      <label>Party Name</label>
-                                                      <div class="input-group">
-                                                        <select name="Jparty_type" class="form-control">
-                                                          <option value="">Don't Know</option>
-                                                          <option value="P">Petitioner</option>
-                                                          <option value="R">Respondent</option></select>
-                                                        <input type="text" class="form-control">
-                                                      </div>
-
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-5">
-                                                  <div class="form-group">
-                                                      <label>Judgments between dates</label>
-                                                      <div class="input-group">
-                                                        <input type="date" placeholder="Enter Detail" class="form-control">
-                                                        <span class="middle-text">to</span>
-                                                        <input type="date" placeholder="Enter Detail" class="form-control">
-                                                      </div>
-                                                    </div>
-                                                </div>
-
-
-
-                                                <div class="col-md-3">
-                                                  <div class="form-group">
-                                                      <label>Reportable</label>
-                                                      <select id="CTrpt" class="form-control">
-                                                          <option value="A">All</option>
-                                                          <option value="R">Reportable</option>
-                                                          <option value="N">Non-Reportable</option>
+                                                      <label>Court*</label>
+                                                      <select name="ddl_court" class="form-control">
+                                                        <option value="">Select</option>
+                                                        <option value="4">Supreme Court</option>
+                                                        <option value="1" selected="selected">High Court</option>
+                                                        <option value="3">District Court</option>
+                                                        <option value="5">Tribunal/State Agency</option>
                                                       </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                  <div class="form-group">
+                                                      <label>State*</label>
+                                                      <select class="form-control">
+                                                        <option value="">Select</option>
+                                                        <option value="4">Haryana</option>
+                                                        <option value="1" selected="selected">Punjab</option>
+                                                        <option value="3">UP</option>
+                                                        <option value="5">Rajasthan</option>
+                                                      </select>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-4">
+                                                  <div class="form-group">
+                                                      <label>Bench</label>
+                                                      <select class="form-control">
+                                                        <option value="">Select</option>
+                                                        <option value="4">Branch 1</option>
+
+                                                      </select>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-8">
+                                                  <div class="form-group">
+                                                      <label>Case Detail</label>
+                                                      <div class="input-group">
+                                                        <span class="middle-text">Type</span>
+                                                        <select class="form-control">
+                                                          <option value="">Select</option>
+                                                          <option value="4">Branch 1</option>
+
+                                                        </select>
+                                                        <span class="middle-text">No.</span>
+                                                        <input type="date" placeholder="Enter Detail" class="form-control">
+                                                        <span class="middle-text">Year*</span>
+                                                        <select class="form-control">
+                                                          <option value="">Select</option>
+                                                          <option value="4">Branch 1</option>
+
+                                                        </select>
+                                                      </div>
+                                                    </div>
+                                                </div>
+
+
+
+                                                <div class="col-md-4">
+                                                  <div class="form-group">
+                                                      <label>Order Date</label>
+                                                    <input type="date" placeholder="Enter Detail" class="form-control">
                                                     </div>
                                                 </div>
 
@@ -426,6 +490,7 @@
                                           </div>
                                 </div>
                               </div>
+
                               <div role="tabpanel" class="tab-pane" id="tabe6">
                                 <div class="tab-body">
                                   <div class="form-container">
