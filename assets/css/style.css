@@ -8852,11 +8852,11 @@ button:focus {
         display: block
     }
     .am-left-sidebar .am-logo {
-        background: url(../img/logo-full.png) 15px center no-repeat #393838;
-        height: 70px;
-        border-bottom: 1px solid #353434;
-        display: block
-    }
+    background: url(../img/logo-full.png) 15px center no-repeat #2d2c2c;
+    height: 70px;
+    border-bottom: 1px solid #333333;
+    display: block;
+}
 }
 
 @media (max-width:767px) and (-webkit-min-device-pixel-ratio:2),
@@ -16277,7 +16277,7 @@ fieldset[disabled] .btn-social.btn-tumblr:hover {
     font-size: 13px;
     margin-right: 0px;
     border-right: 1px solid #dcdada;
-  
+
 }
 .nav-tabs>li a:hover {
     background: 0 0;
