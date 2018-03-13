@@ -4687,7 +4687,7 @@ textarea.input-group-sm>.input-group-btn>.btn {
 
 .nav-tabs>li {
     float: left;
-    margin-bottom: -1px
+    flex: 1;
 }
 
 .nav-tabs>li>a {
@@ -16264,16 +16264,20 @@ fieldset[disabled] .btn-social.btn-tumblr:hover {
     margin-right: 0px;
 }
 .nav-tabs>li a {
-    padding: 16px 16px;
     margin-right: 0;
-    min-width: 80px;
     text-align: center;
-    border-radius: 0;
     color: #383737;
     border-width: 0;
     background-color: #f7f7f7;
-    border-right: 1px solid #e0e0e0;
     border-top: 1px solid #e0e0e0;
+    position: relative;
+    display: block;
+    padding: 14px 16px;
+    font-weight: 600;
+    font-size: 13px;
+    margin-right: 0px;
+    border-right: 1px solid #dcdada;
+  
 }
 .nav-tabs>li a:hover {
     background: 0 0;
@@ -16282,11 +16286,11 @@ fieldset[disabled] .btn-social.btn-tumblr:hover {
 .nav-tabs>li a:active {
     background-color: transparent
 }
-
 .nav-tabs>li.active {
     position: relative;
     background: 0 0;
-    color: #ef6262
+    color: #ef6262;
+    margin-bottom: -1px;
 }
 
 .nav-tabs>li.active a, .nav-tabs>li.active a:focus, .nav-tabs>li.active a:hover {
