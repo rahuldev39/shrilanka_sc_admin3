@@ -176,10 +176,10 @@ h1 span {
     box-shadow: 0 0 0 2em #fff inset;
 }
 .featured-links a:hover {
-    background: #9d0a0e;
+    background: #e9373c;
     text-decoration: none;
     color: #fff;
-    box-shadow: 0 0 0 0px #a20d10 inset;
+    box-shadow: 0 0 0 0px #731215 inset;
 }
 .view-block {
     padding: 20px;
@@ -313,12 +313,9 @@ transform: scale(1);
 }
 .search-box {
     flex: 1;
-    padding-right: 10px;
-    border-right: 1px solid rgba(255, 255, 255, 0.18);
-    margin-right: 10px;
 }
 .search-box input {
-    height: 36px;
+    height: 40px;
 }
 .sl-banner{
   position: relative;
@@ -330,6 +327,7 @@ transform: scale(1);
 .search-btn {
     border: 2px solid #ffffffba !important;
     background-color: #e9373c !important;
+    height: 40px;
 }
 .block2 {
     background-image: url(./../img/Difference-Between-Act-and-Bill-toprankers.png);
@@ -423,6 +421,31 @@ transform: scale(1);
 .head-row-light th {
     border-color: #7d7d7d !important;
 }
+
+.search-selection .bootstrap-select .btn {
+    /* border-radius: 55px 0 0 55px; */
+    outline: 0;
+    border-right: 0;
+    border-color: #eaeaea;
+    color: #444;
+    background: #ffffff;
+    background: -moz-linear-gradient(top,#437aa2 1%,#2c5f84 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#437aa2', endColorstr='#2c5f84', GradientType=0);
+    box-shadow: none;
+    border-right: 0px;
+    border-width: 3px;
+    min-width: 140px;
+    outline: none !important
+}
+.search-selection .open>.dropdown-toggle.btn-default:hover {
+    color: #555;
+    background-color: #ffffff;
+    border-color: #eaeaea;
+}
+.search-selection .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn)
+{
+    width: auto;
+}
 @media (min-width: 992px){
   .footer-bottom {
       padding: 10px 0;
@@ -475,8 +498,17 @@ transform: scale(1);
     display: none;
   }
 }
-@media (max-width: 530px)
+@media (max-width: 570px)
 {
+  .saerch-product-inner {
+    display: block;
+}
+.search-selection{
+  margin-bottom: 10px
+}
+.search-selection .btn-group {
+    width: 100% !important;
+}
 .search-box {
     margin-right: 0px;
     padding-right: 0px;
