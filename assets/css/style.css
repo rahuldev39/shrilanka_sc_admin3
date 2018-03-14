@@ -1400,7 +1400,7 @@ textarea {
 }
 
 a {
-    color: #e74c3c;
+    color: #ea373c;
     text-decoration: none;
 }
 
@@ -3710,21 +3710,21 @@ fieldset[disabled] a.btn {
 
 .btn-primary {
     color: #fff;
-    background-color: #ef6262;
-    border-color: #ef6262
+    background-color: #ea373c;
+    border-color: #d8272c;
 }
 
 .btn-primary.focus,
 .btn-primary:focus {
-    color: #fff;
-    background-color: #ef6262;
-    border-color: #ef6262
+  color: #fff;
+  background-color: #e2272c;
+  border-color: #ce1c22;
 }
 
 .btn-primary:hover {
     color: #fff;
-    background-color: #f17979;
-    border-color: #f17979
+    background-color: #e2272c;
+    border-color: #ce1c22;
 }
 
 .btn-primary.active,
@@ -17247,11 +17247,11 @@ a.text-alt4:hover {
 .form-control[multiple] option {
     padding: 8px 12px
 }
-
 label {
     font-weight: 600;
     font-size: 13px;
     margin-bottom: 6px;
+    color: #484848;
 }
 .am-checkbox,
 .am-radio {
